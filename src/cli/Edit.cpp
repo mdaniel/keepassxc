@@ -31,15 +31,15 @@
 
 Edit::Edit()
 {
-    this->name = QString("edit");
-    this->description = QObject::tr("Edit an entry.");
+    name = QString("edit");
+    description = QObject::tr("Edit an entry.");
 }
 
 Edit::~Edit()
 {
 }
 
-int Edit::execute(QStringList arguments)
+int Edit::execute(const QStringList& arguments)
 {
 
     QTextStream inputTextStream(stdin, QIODevice::ReadOnly);
